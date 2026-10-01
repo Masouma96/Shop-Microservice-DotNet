@@ -31,7 +31,24 @@
         },
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/JsonWebToken"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/JsonWebToken"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/JsonWebToken"
+                }
+              }
+            }
           }
         }
       }
@@ -62,12 +79,29 @@
         },
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
           }
         }
       }
     },
-    "/api/v1/Users/Insert": {
+    "/api/v1/User/Insert": {
       "post": {
         "tags": [
           "User"
@@ -93,7 +127,24 @@
         },
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
           }
         }
       }
@@ -102,9 +153,6 @@
   "components": {
     "schemas": {
       "AuthCommand": {
-        "required": [
-          "mobileNumber"
-        ],
         "type": "object",
         "properties": {
           "mobileNumber": {
@@ -128,16 +176,30 @@
         },
         "additionalProperties": false
       },
+      "JsonWebToken": {
+        "type": "object",
+        "properties": {
+          "token": {
+            "type": "string",
+            "nullable": true
+          },
+          "expires": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "refreshToken": {
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "additionalProperties": false
+      },
       "UserCommands": {
-        "required": [
-          "codeNumber",
-          "fullName"
-        ],
         "type": "object",
         "properties": {
           "fullName": {
-            "minLength": 3,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "codeNumber": {
             "type": "string",

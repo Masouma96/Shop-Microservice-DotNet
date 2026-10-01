@@ -11,3 +11,16 @@ E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.UnitTest\obj\Debug\net
 E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.UnitTest\obj\Debug\net10.0\IDP.UnitTest.pdb
 E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.UnitTest\obj\Debug\net10.0\ref\IDP.UnitTest.dll
 E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.UnitTest\obj\Debug\net10.0\IDP.Unit.5536DD32.Up2Date
+D:\Projects\Masouma_Microservice\Src\Services\IDPService\IDP.UnitTest\bin\Debug\net10.0\IDP.UnitTest.deps.json
+D:\Projects\Masouma_Microservice\Src\Services\IDPService\IDP.UnitTest\bin\Debug\net10.0\IDP.UnitTest.dll
+D:\Projects\Masouma_Microservice\Src\Services\IDPService\IDP.UnitTest\bin\Debug\net10.0\IDP.UnitTest.pdb
+D:\Projects\Masouma_Microservice\Src\Services\IDPService\IDP.UnitTest\obj\Debug\net10.0\IDP.UnitTest.csproj.AssemblyReference.cache
+D:\Projects\Masouma_Microservice\Src\Services\IDPService\IDP.UnitTest\obj\Debug\net10.0\IDP.UnitTest.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Masouma_Microservice\Src\Services\IDPService\IDP.UnitTest\obj\Debug\net10.0\IDP.UnitTest.AssemblyInfoInputs.cache
+D:\Projects\Masouma_Microservice\Src\Services\IDPService\IDP.UnitTest\obj\Debug\net10.0\IDP.UnitTest.AssemblyInfo.cs
+D:\Projects\Masouma_Microservice\Src\Services\IDPService\IDP.UnitTest\obj\Debug\net10.0\IDP.UnitTest.csproj.CoreCompileInputs.cache
+D:\Projects\Masouma_Microservice\Src\Services\IDPService\IDP.UnitTest\obj\Debug\net10.0\IDP.UnitTest.sourcelink.json
+D:\Projects\Masouma_Microservice\Src\Services\IDPService\IDP.UnitTest\obj\Debug\net10.0\IDP.UnitTest.dll
+D:\Projects\Masouma_Microservice\Src\Services\IDPService\IDP.UnitTest\obj\Debug\net10.0\refint\IDP.UnitTest.dll
+D:\Projects\Masouma_Microservice\Src\Services\IDPService\IDP.UnitTest\obj\Debug\net10.0\IDP.UnitTest.pdb
+D:\Projects\Masouma_Microservice\Src\Services\IDPService\IDP.UnitTest\obj\Debug\net10.0\ref\IDP.UnitTest.dll

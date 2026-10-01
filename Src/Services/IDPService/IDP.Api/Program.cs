@@ -1,17 +1,24 @@
-using Asp.Versioning;
-using IDP.Application.Handler.Command.User;
-using MediatR;
-using Microsoft.Extensions.DependencyInjection;
-using IDP.Domain.IRepository.Command;
-using IDP.Domain.IRepository.Command.Base; // لایه پایه کامند
-using IDP.Domain.DTO;
-using IDP.Infra.Repository.Command;
 
-public partial class Program
+using Auth;
+using MediatR;
+using IDP.Infra;
+using Asp.Versioning;
+using IDP.Application.DTO; // لایه پایه کامند
+using IDP.Infra.Repository.Command;
+using IDP.Application.Commands.Auth;
+using IDP.Domain.IRepository.Command;
+using IDP.Domain.IRepository.Command.Base;
+
+namespace IDP.Api;
+
+public class Program
 {
-    private static void Main(string[] args)
+    public static async Task Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
+
+        var environment = builder.Environment.EnvironmentName;
+        builder.Configuration.AddJsonFile($"appsettings.{environment}.json", false, true);
 
         // ۱. تنظیمات ردیس را فقط یک‌بار و کاملاً درست تعریف می‌کنیم
         builder.Services.AddStackExchangeRedisCache(options =>
@@ -25,11 +32,11 @@ public partial class Program
         builder.Services.AddSwaggerGen();
 
         // ۲. اتصال اینترفیس اختصاصی و پایه به کلاس اجرایی ردیس
-        builder.Services.AddScoped<IOtpRedisRepository, OtpRedisRepository>();
+        builder.Services.AddScoped<IOtpRedisRepository<Otp>, OtpRedisRepository>();
         builder.Services.AddScoped<ICommandRepository<Otp>, OtpRedisRepository>();
 
         // تنظیمات مدیاتور
-        builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(UserHandler).Assembly));
+        builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(AuthCommand).Assembly));
 
         // تنظیمات نسخه بندی API
         builder.Services.AddApiVersioning(options =>
@@ -48,11 +55,12 @@ public partial class Program
             options.SubstituteApiVersionInUrl = true;
         });
 
-        Auth.Extensions.AddJwt(builder.Services, builder.Configuration);
+        builder.Services.AddJwt(builder.Configuration); // new
+        builder.Services.AddInfrastructure(builder.Configuration); // new
 
         var app = builder.Build();
 
-        if (app.Environment.IsDevelopment())
+        if (!app.Environment.IsProduction())
         {
             app.MapOpenApi();
             app.UseSwagger();
@@ -61,6 +69,6 @@ public partial class Program
 
         app.UseAuthorization();
         app.MapControllers();
-        app.Run();
+        await app.RunAsync();
     }
 }

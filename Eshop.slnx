@@ -11,7 +11,6 @@
     <Project Path="Src/Services/IDPService/IDP.Application/IDP.Application.csproj" />
     <Project Path="Src/Services/IDPService/IDP.Domain/IDP.Domain.csproj" />
     <Project Path="Src/Services/IDPService/IDP.Infra/IDP.Infra.csproj" />
-    <Project Path="Src/Services/IDPService/IDP.Ioc/IDP.Ioc.csproj" />
     <Project Path="Src/Services/IDPService/IDP.UnitTest/IDP.UnitTest.csproj" />
   </Folder>
   <Folder Name="/Src/Services/OrderService/" />
