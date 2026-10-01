@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IDPService\\IDP.Api\\IDP.Api.csproj": {}
+    "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Services\\IDPService\\IDP.Api\\IDP.Api.csproj": {}
   },
   "projects": {
-    "E:\\project\\EshopProject\\Eshop\\Src\\Common\\Auth\\Auth.csproj": {
+    "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Common\\Auth\\Auth.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\project\\EshopProject\\Eshop\\Src\\Common\\Auth\\Auth.csproj",
+        "projectUniqueName": "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Common\\Auth\\Auth.csproj",
         "projectName": "Auth",
-        "projectPath": "E:\\project\\EshopProject\\Eshop\\Src\\Common\\Auth\\Auth.csproj",
-        "packagesPath": "C:\\Users\\masouma.modarresi\\.nuget\\packages\\",
-        "outputPath": "E:\\project\\EshopProject\\Eshop\\Src\\Common\\Auth\\obj\\",
+        "projectPath": "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Common\\Auth\\Auth.csproj",
+        "packagesPath": "C:\\Users\\musta\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Common\\Auth\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\masouma.modarresi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\musta\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -45,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.400"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net10.0": {
@@ -105,7 +105,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -383,20 +383,20 @@
         }
       }
     },
-    "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IDPService\\IDP.Api\\IDP.Api.csproj": {
+    "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Services\\IDPService\\IDP.Api\\IDP.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IDPService\\IDP.Api\\IDP.Api.csproj",
+        "projectUniqueName": "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Services\\IDPService\\IDP.Api\\IDP.Api.csproj",
         "projectName": "IDP.Api",
-        "projectPath": "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IDPService\\IDP.Api\\IDP.Api.csproj",
-        "packagesPath": "C:\\Users\\masouma.modarresi\\.nuget\\packages\\",
-        "outputPath": "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IDPService\\IDP.Api\\obj\\",
+        "projectPath": "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Services\\IDPService\\IDP.Api\\IDP.Api.csproj",
+        "packagesPath": "C:\\Users\\musta\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Services\\IDPService\\IDP.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\masouma.modarresi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\musta\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -412,17 +412,17 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "E:\\project\\EshopProject\\Eshop\\Src\\Common\\Auth\\Auth.csproj": {
-                "projectPath": "E:\\project\\EshopProject\\Eshop\\Src\\Common\\Auth\\Auth.csproj"
+              "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Common\\Auth\\Auth.csproj": {
+                "projectPath": "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Common\\Auth\\Auth.csproj"
               },
-              "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IDPService\\IDP.Application\\IDP.Application.csproj": {
-                "projectPath": "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IDPService\\IDP.Application\\IDP.Application.csproj"
+              "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Services\\IDPService\\IDP.Application\\IDP.Application.csproj": {
+                "projectPath": "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Services\\IDPService\\IDP.Application\\IDP.Application.csproj"
               },
-              "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IDPService\\IDP.Domain\\IDP.Domain.csproj": {
-                "projectPath": "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IDPService\\IDP.Domain\\IDP.Domain.csproj"
+              "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Services\\IDPService\\IDP.Domain\\IDP.Domain.csproj": {
+                "projectPath": "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Services\\IDPService\\IDP.Domain\\IDP.Domain.csproj"
               },
-              "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IDPService\\IDP.Infra\\IDP.Infra.csproj": {
-                "projectPath": "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IDPService\\IDP.Infra\\IDP.Infra.csproj"
+              "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Services\\IDPService\\IDP.Infra\\IDP.Infra.csproj": {
+                "projectPath": "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Services\\IDPService\\IDP.Infra\\IDP.Infra.csproj"
               }
             }
           }
@@ -440,7 +440,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.400"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net10.0": {
@@ -481,6 +481,10 @@
               "target": "Package",
               "version": "[10.0.12, )"
             },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[10.0.12, )"
+            },
             "Microsoft.Extensions.Caching.StackExchangeRedis": {
               "target": "Package",
               "version": "[10.0.12, )"
@@ -509,7 +513,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
@@ -927,20 +931,20 @@
         }
       }
     },
-    "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IDPService\\IDP.Application\\IDP.Application.csproj": {
+    "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Services\\IDPService\\IDP.Application\\IDP.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IDPService\\IDP.Application\\IDP.Application.csproj",
+        "projectUniqueName": "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Services\\IDPService\\IDP.Application\\IDP.Application.csproj",
         "projectName": "IDP.Application",
-        "projectPath": "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IDPService\\IDP.Application\\IDP.Application.csproj",
-        "packagesPath": "C:\\Users\\masouma.modarresi\\.nuget\\packages\\",
-        "outputPath": "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IDPService\\IDP.Application\\obj\\",
+        "projectPath": "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Services\\IDPService\\IDP.Application\\IDP.Application.csproj",
+        "packagesPath": "C:\\Users\\musta\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Services\\IDPService\\IDP.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\masouma.modarresi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\musta\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -956,11 +960,11 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "E:\\project\\EshopProject\\Eshop\\Src\\Common\\Auth\\Auth.csproj": {
-                "projectPath": "E:\\project\\EshopProject\\Eshop\\Src\\Common\\Auth\\Auth.csproj"
+              "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Common\\Auth\\Auth.csproj": {
+                "projectPath": "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Common\\Auth\\Auth.csproj"
               },
-              "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IDPService\\IDP.Domain\\IDP.Domain.csproj": {
-                "projectPath": "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IDPService\\IDP.Domain\\IDP.Domain.csproj"
+              "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Services\\IDPService\\IDP.Domain\\IDP.Domain.csproj": {
+                "projectPath": "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Services\\IDPService\\IDP.Domain\\IDP.Domain.csproj"
               }
             }
           }
@@ -975,7 +979,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.400"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net10.0": {
@@ -1011,7 +1015,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -1289,20 +1293,20 @@
         }
       }
     },
-    "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IDPService\\IDP.Domain\\IDP.Domain.csproj": {
+    "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Services\\IDPService\\IDP.Domain\\IDP.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IDPService\\IDP.Domain\\IDP.Domain.csproj",
+        "projectUniqueName": "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Services\\IDPService\\IDP.Domain\\IDP.Domain.csproj",
         "projectName": "IDP.Domain",
-        "projectPath": "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IDPService\\IDP.Domain\\IDP.Domain.csproj",
-        "packagesPath": "C:\\Users\\masouma.modarresi\\.nuget\\packages\\",
-        "outputPath": "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IDPService\\IDP.Domain\\obj\\",
+        "projectPath": "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Services\\IDPService\\IDP.Domain\\IDP.Domain.csproj",
+        "packagesPath": "C:\\Users\\musta\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Services\\IDPService\\IDP.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\masouma.modarresi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\musta\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -1330,7 +1334,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.400"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net10.0": {
@@ -1362,7 +1366,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -1640,20 +1644,20 @@
         }
       }
     },
-    "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IDPService\\IDP.Infra\\IDP.Infra.csproj": {
+    "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Services\\IDPService\\IDP.Infra\\IDP.Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IDPService\\IDP.Infra\\IDP.Infra.csproj",
+        "projectUniqueName": "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Services\\IDPService\\IDP.Infra\\IDP.Infra.csproj",
         "projectName": "IDP.Infra",
-        "projectPath": "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IDPService\\IDP.Infra\\IDP.Infra.csproj",
-        "packagesPath": "C:\\Users\\masouma.modarresi\\.nuget\\packages\\",
-        "outputPath": "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IDPService\\IDP.Infra\\obj\\",
+        "projectPath": "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Services\\IDPService\\IDP.Infra\\IDP.Infra.csproj",
+        "packagesPath": "C:\\Users\\musta\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Services\\IDPService\\IDP.Infra\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\masouma.modarresi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\musta\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -1669,8 +1673,11 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IDPService\\IDP.Domain\\IDP.Domain.csproj": {
-                "projectPath": "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IDPService\\IDP.Domain\\IDP.Domain.csproj"
+              "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Services\\IDPService\\IDP.Application\\IDP.Application.csproj": {
+                "projectPath": "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Services\\IDPService\\IDP.Application\\IDP.Application.csproj"
+              },
+              "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Services\\IDPService\\IDP.Domain\\IDP.Domain.csproj": {
+                "projectPath": "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Services\\IDPService\\IDP.Domain\\IDP.Domain.csproj"
               }
             }
           }
@@ -1685,7 +1692,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.400"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net10.0": {
@@ -1735,6 +1742,10 @@
             "Newtonsoft.Json.Bson": {
               "target": "Package",
               "version": "[1.0.3, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[10.0.3, )"
             }
           },
           "imports": [
@@ -1753,7 +1764,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

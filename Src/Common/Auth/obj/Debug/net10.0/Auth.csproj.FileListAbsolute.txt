@@ -11,3 +11,16 @@ E:\project\EshopProject\Eshop\Src\Common\Auth\obj\Debug\net10.0\refint\Auth.dll
 E:\project\EshopProject\Eshop\Src\Common\Auth\obj\Debug\net10.0\Auth.pdb
 E:\project\EshopProject\Eshop\Src\Common\Auth\obj\Debug\net10.0\ref\Auth.dll
 E:\project\EshopProject\Eshop\Src\Common\Auth\obj\Debug\net10.0\Auth.csproj.Up2Date
+D:\Projects\Masouma_Microservice\Src\Common\Auth\bin\Debug\net10.0\Auth.deps.json
+D:\Projects\Masouma_Microservice\Src\Common\Auth\bin\Debug\net10.0\Auth.dll
+D:\Projects\Masouma_Microservice\Src\Common\Auth\bin\Debug\net10.0\Auth.pdb
+D:\Projects\Masouma_Microservice\Src\Common\Auth\obj\Debug\net10.0\Auth.csproj.AssemblyReference.cache
+D:\Projects\Masouma_Microservice\Src\Common\Auth\obj\Debug\net10.0\Auth.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Masouma_Microservice\Src\Common\Auth\obj\Debug\net10.0\Auth.AssemblyInfoInputs.cache
+D:\Projects\Masouma_Microservice\Src\Common\Auth\obj\Debug\net10.0\Auth.AssemblyInfo.cs
+D:\Projects\Masouma_Microservice\Src\Common\Auth\obj\Debug\net10.0\Auth.csproj.CoreCompileInputs.cache
+D:\Projects\Masouma_Microservice\Src\Common\Auth\obj\Debug\net10.0\Auth.sourcelink.json
+D:\Projects\Masouma_Microservice\Src\Common\Auth\obj\Debug\net10.0\Auth.dll
+D:\Projects\Masouma_Microservice\Src\Common\Auth\obj\Debug\net10.0\refint\Auth.dll
+D:\Projects\Masouma_Microservice\Src\Common\Auth\obj\Debug\net10.0\Auth.pdb
+D:\Projects\Masouma_Microservice\Src\Common\Auth\obj\Debug\net10.0\ref\Auth.dll

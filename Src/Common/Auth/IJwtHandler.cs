@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿
+namespace Auth;
 
-namespace Auth
+public interface IJwtHandler
 {
-    public interface IJwtHandler
-    {
-        JsonWebToken Create(Int64 userId);
-    }
+    JsonWebToken Create(long userId);
 }

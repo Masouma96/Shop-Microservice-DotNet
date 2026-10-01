@@ -1,46 +1,32 @@
-﻿using IDP.Domain.DTO;
-using IDP.Domain.IRepository.Command.Base;
-using IDP.Domain.Entities;
-using Microsoft.Extensions.Caching.Distributed;
-using Microsoft.Extensions.Configuration;
+﻿
 using Newtonsoft.Json;
-using System;
-using System.Text;
-using System.Threading.Tasks;
+using IDP.Application.DTO;
 using IDP.Domain.IRepository.Command;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Caching.Distributed;
 
-namespace IDP.Infra.Repository.Command
+namespace IDP.Infra.Repository.Command;
+
+public class OtpRedisRepository(IDistributedCache DistributedCache, IConfiguration Configuration) : IOtpRedisRepository<Otp>
 {
-    public class OtpRedisRepository : IOtpRedisRepository
+    public async Task<bool> Insert(Otp entity)
     {
-        private readonly IDistributedCache _distributedCache;
-        private readonly IConfiguration _configuration;
+        int time = Convert.ToInt32(Configuration["Otp:OtpTime"]!);
 
-        public OtpRedisRepository(IDistributedCache distributedCache, IConfiguration configuration)
-        {
-            _distributedCache = distributedCache;
-            _configuration = configuration;
-        }
+        DistributedCache.SetString(entity.UserId.ToString(), 
+            JsonConvert.SerializeObject(entity), new DistributedCacheEntryOptions().SetSlidingExpiration(TimeSpan.FromMinutes(time)).SetAbsoluteExpiration(TimeSpan.FromMinutes(time)));
 
-        public async Task<bool> Insert(Otp entity)
-        {
-        
-            int time = Convert.ToInt32(_configuration.GetSection("Otp:OtpTime").Value);
+        return true; 
+    }  
 
-            _distributedCache.SetString(entity.UserId.ToString(), JsonConvert.SerializeObject(entity), new DistributedCacheEntryOptions().SetSlidingExpiration(TimeSpan.FromMinutes(time)).SetAbsoluteExpiration(TimeSpan.FromMinutes(time)));
+    public async Task<bool> Delete(Otp entity)
+    {
+        await DistributedCache.RemoveAsync(entity.UserId.ToString());
+        return true;
+    }
 
-            return true; 
-        }  
-
-        public async Task<bool> Delete(Otp entity)
-        {
-            await _distributedCache.RemoveAsync(entity.UserId.ToString());
-            return true;
-        }
-
-        public Task<bool> Update(Otp entity)
-        {
-            throw new NotImplementedException();
-        }
+    public Task<bool> Update(Otp entity)
+    {
+        throw new NotImplementedException();
     }
 }

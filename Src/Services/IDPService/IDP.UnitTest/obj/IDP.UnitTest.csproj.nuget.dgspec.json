@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IDPService\\IDP.UnitTest\\IDP.UnitTest.csproj": {}
+    "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Services\\IDPService\\IDP.UnitTest\\IDP.UnitTest.csproj": {}
   },
   "projects": {
-    "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IDPService\\IDP.UnitTest\\IDP.UnitTest.csproj": {
+    "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Services\\IDPService\\IDP.UnitTest\\IDP.UnitTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IDPService\\IDP.UnitTest\\IDP.UnitTest.csproj",
+        "projectUniqueName": "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Services\\IDPService\\IDP.UnitTest\\IDP.UnitTest.csproj",
         "projectName": "IDP.UnitTest",
-        "projectPath": "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IDPService\\IDP.UnitTest\\IDP.UnitTest.csproj",
-        "packagesPath": "C:\\Users\\masouma.modarresi\\.nuget\\packages\\",
-        "outputPath": "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IDPService\\IDP.UnitTest\\obj\\",
+        "projectPath": "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Services\\IDPService\\IDP.UnitTest\\IDP.UnitTest.csproj",
+        "packagesPath": "C:\\Users\\musta\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Masouma_Microservice_Fork\\Shop-Microservice-DotNet\\Src\\Services\\IDPService\\IDP.UnitTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\masouma.modarresi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\musta\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -45,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.400"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net10.0": {
@@ -77,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
