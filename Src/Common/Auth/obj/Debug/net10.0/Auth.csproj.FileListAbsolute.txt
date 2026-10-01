@@ -1,0 +1,13 @@
+E:\project\EshopProject\Eshop\Src\Common\Auth\bin\Debug\net10.0\Auth.deps.json
+E:\project\EshopProject\Eshop\Src\Common\Auth\bin\Debug\net10.0\Auth.dll
+E:\project\EshopProject\Eshop\Src\Common\Auth\bin\Debug\net10.0\Auth.pdb
+E:\project\EshopProject\Eshop\Src\Common\Auth\obj\Debug\net10.0\Auth.csproj.AssemblyReference.cache
+E:\project\EshopProject\Eshop\Src\Common\Auth\obj\Debug\net10.0\Auth.GeneratedMSBuildEditorConfig.editorconfig
+E:\project\EshopProject\Eshop\Src\Common\Auth\obj\Debug\net10.0\Auth.AssemblyInfoInputs.cache
+E:\project\EshopProject\Eshop\Src\Common\Auth\obj\Debug\net10.0\Auth.AssemblyInfo.cs
+E:\project\EshopProject\Eshop\Src\Common\Auth\obj\Debug\net10.0\Auth.csproj.CoreCompileInputs.cache
+E:\project\EshopProject\Eshop\Src\Common\Auth\obj\Debug\net10.0\Auth.dll
+E:\project\EshopProject\Eshop\Src\Common\Auth\obj\Debug\net10.0\refint\Auth.dll
+E:\project\EshopProject\Eshop\Src\Common\Auth\obj\Debug\net10.0\Auth.pdb
+E:\project\EshopProject\Eshop\Src\Common\Auth\obj\Debug\net10.0\ref\Auth.dll
+E:\project\EshopProject\Eshop\Src\Common\Auth\obj\Debug\net10.0\Auth.csproj.Up2Date

@@ -1,0 +1,17 @@
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Application\bin\Debug\net10.0\IDP.Application.deps.json
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Application\bin\Debug\net10.0\IDP.Application.dll
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Application\bin\Debug\net10.0\IDP.Application.pdb
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Application\bin\Debug\net10.0\Auth.dll
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Application\bin\Debug\net10.0\IDP.Domain.dll
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Application\bin\Debug\net10.0\Auth.pdb
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Application\bin\Debug\net10.0\IDP.Domain.pdb
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Application\obj\Debug\net10.0\IDP.Application.csproj.AssemblyReference.cache
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Application\obj\Debug\net10.0\IDP.Application.GeneratedMSBuildEditorConfig.editorconfig
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Application\obj\Debug\net10.0\IDP.Application.AssemblyInfoInputs.cache
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Application\obj\Debug\net10.0\IDP.Application.AssemblyInfo.cs
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Application\obj\Debug\net10.0\IDP.Application.csproj.CoreCompileInputs.cache
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Application\obj\Debug\net10.0\IDP.Appl.0B7DE00E.Up2Date
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Application\obj\Debug\net10.0\IDP.Application.dll
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Application\obj\Debug\net10.0\refint\IDP.Application.dll
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Application\obj\Debug\net10.0\IDP.Application.pdb
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Application\obj\Debug\net10.0\ref\IDP.Application.dll

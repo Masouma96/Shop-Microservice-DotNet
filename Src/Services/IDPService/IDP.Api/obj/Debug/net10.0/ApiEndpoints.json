@@ -1,0 +1,82 @@
+[
+  {
+    "ContainingType": "IDP.Api.Controllers.V1.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/v1/Auth/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "authQuery",
+        "Type": "IDP.Application.Query.Auth.AuthQuery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IDP.Api.Controllers.V1.AuthController",
+    "Method": "RegisterAndSendOtp",
+    "RelativePath": "api/v1/Auth/RegisterAndSendOtp",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "authCommand",
+        "Type": "IDP.Application.Commands.Auth.AuthCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IDP.Api.Controllers.V1.UserController",
+    "Method": "Insert",
+    "RelativePath": "api/v1/Users/Insert",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userCommand",
+        "Type": "IDP.Application.Commands.User.UserCommands",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IDP.Api.Controllers.V1.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/v2/Auth/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "authQuery",
+        "Type": "IDP.Application.Query.Auth.AuthQuery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IDP.Api.Controllers.V1.AuthController",
+    "Method": "RegisterAndSendOtp",
+    "RelativePath": "api/v2/Auth/RegisterAndSendOtp",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "authCommand",
+        "Type": "IDP.Application.Commands.Auth.AuthCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

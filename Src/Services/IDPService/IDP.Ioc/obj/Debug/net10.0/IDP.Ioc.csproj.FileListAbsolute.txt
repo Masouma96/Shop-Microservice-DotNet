@@ -1,0 +1,13 @@
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Ioc\bin\Debug\net10.0\IDP.Ioc.deps.json
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Ioc\bin\Debug\net10.0\IDP.Ioc.dll
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Ioc\bin\Debug\net10.0\IDP.Ioc.pdb
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Ioc\obj\Debug\net10.0\IDP.Ioc.csproj.AssemblyReference.cache
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Ioc\obj\Debug\net10.0\IDP.Ioc.GeneratedMSBuildEditorConfig.editorconfig
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Ioc\obj\Debug\net10.0\IDP.Ioc.AssemblyInfoInputs.cache
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Ioc\obj\Debug\net10.0\IDP.Ioc.AssemblyInfo.cs
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Ioc\obj\Debug\net10.0\IDP.Ioc.csproj.CoreCompileInputs.cache
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Ioc\obj\Debug\net10.0\IDP.Ioc.dll
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Ioc\obj\Debug\net10.0\refint\IDP.Ioc.dll
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Ioc\obj\Debug\net10.0\IDP.Ioc.pdb
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Ioc\obj\Debug\net10.0\ref\IDP.Ioc.dll
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Ioc\obj\Debug\net10.0\IDP.Ioc.csproj.Up2Date

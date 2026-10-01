@@ -1,0 +1,17 @@
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Infra\bin\Debug\net10.0\IDP.Infra.deps.json
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Infra\bin\Debug\net10.0\IDP.Infra.runtimeconfig.json
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Infra\bin\Debug\net10.0\IDP.Infra.dll
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Infra\bin\Debug\net10.0\IDP.Infra.pdb
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Infra\bin\Debug\net10.0\IDP.Domain.dll
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Infra\bin\Debug\net10.0\IDP.Domain.pdb
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Infra\obj\Debug\net10.0\IDP.Infra.csproj.AssemblyReference.cache
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Infra\obj\Debug\net10.0\IDP.Infra.GeneratedMSBuildEditorConfig.editorconfig
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Infra\obj\Debug\net10.0\IDP.Infra.AssemblyInfoInputs.cache
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Infra\obj\Debug\net10.0\IDP.Infra.AssemblyInfo.cs
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Infra\obj\Debug\net10.0\IDP.Infra.csproj.CoreCompileInputs.cache
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Infra\obj\Debug\net10.0\IDP.Infra.csproj.Up2Date
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Infra\obj\Debug\net10.0\IDP.Infra.dll
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Infra\obj\Debug\net10.0\refint\IDP.Infra.dll
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Infra\obj\Debug\net10.0\IDP.Infra.pdb
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Infra\obj\Debug\net10.0\IDP.Infra.genruntimeconfig.cache
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Infra\obj\Debug\net10.0\ref\IDP.Infra.dll
