@@ -9,6 +9,7 @@ E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Infra\obj\Debug\net10.
 E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Infra\obj\Debug\net10.0\IDP.Infra.AssemblyInfoInputs.cache
 E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Infra\obj\Debug\net10.0\IDP.Infra.AssemblyInfo.cs
 E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Infra\obj\Debug\net10.0\IDP.Infra.csproj.CoreCompileInputs.cache
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Infra\obj\Debug\net10.0\IDP.Infra.sourcelink.json
 E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Infra\obj\Debug\net10.0\IDP.Infra.csproj.Up2Date
 E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Infra\obj\Debug\net10.0\IDP.Infra.dll
 E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Infra\obj\Debug\net10.0\refint\IDP.Infra.dll

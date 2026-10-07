@@ -10,6 +10,7 @@ E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Application\obj\Debug\
 E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Application\obj\Debug\net10.0\IDP.Application.AssemblyInfoInputs.cache
 E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Application\obj\Debug\net10.0\IDP.Application.AssemblyInfo.cs
 E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Application\obj\Debug\net10.0\IDP.Application.csproj.CoreCompileInputs.cache
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Application\obj\Debug\net10.0\IDP.Application.sourcelink.json
 E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Application\obj\Debug\net10.0\IDP.Appl.0B7DE00E.Up2Date
 E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Application\obj\Debug\net10.0\IDP.Application.dll
 E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Application\obj\Debug\net10.0\refint\IDP.Application.dll

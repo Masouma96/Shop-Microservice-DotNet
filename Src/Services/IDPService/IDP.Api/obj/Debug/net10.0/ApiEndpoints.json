@@ -32,6 +32,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "IDP.Api.Controllers.V1.AuthController",
+    "Method": "VerifyOtp",
+    "RelativePath": "api/v1/Auth/VerifyOtp",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "verifyOtpCommand",
+        "Type": "IDP.Application.Commands.Auth.VerifyOtpCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "IDP.Api.Controllers.V1.UserController",
     "Method": "Insert",
     "RelativePath": "api/v1/Users/Insert",
@@ -74,6 +90,22 @@
       {
         "Name": "authCommand",
         "Type": "IDP.Application.Commands.Auth.AuthCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IDP.Api.Controllers.V1.AuthController",
+    "Method": "VerifyOtp",
+    "RelativePath": "api/v2/Auth/VerifyOtp",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "verifyOtpCommand",
+        "Type": "IDP.Application.Commands.Auth.VerifyOtpCommand",
         "IsRequired": true
       }
     ],

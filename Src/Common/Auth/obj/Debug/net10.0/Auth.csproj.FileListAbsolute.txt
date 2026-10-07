@@ -6,6 +6,7 @@ E:\project\EshopProject\Eshop\Src\Common\Auth\obj\Debug\net10.0\Auth.GeneratedMS
 E:\project\EshopProject\Eshop\Src\Common\Auth\obj\Debug\net10.0\Auth.AssemblyInfoInputs.cache
 E:\project\EshopProject\Eshop\Src\Common\Auth\obj\Debug\net10.0\Auth.AssemblyInfo.cs
 E:\project\EshopProject\Eshop\Src\Common\Auth\obj\Debug\net10.0\Auth.csproj.CoreCompileInputs.cache
+E:\project\EshopProject\Eshop\Src\Common\Auth\obj\Debug\net10.0\Auth.sourcelink.json
 E:\project\EshopProject\Eshop\Src\Common\Auth\obj\Debug\net10.0\Auth.dll
 E:\project\EshopProject\Eshop\Src\Common\Auth\obj\Debug\net10.0\refint\Auth.dll
 E:\project\EshopProject\Eshop\Src\Common\Auth\obj\Debug\net10.0\Auth.pdb

@@ -459,9 +459,17 @@
               "target": "Package",
               "version": "[10.2.1, )"
             },
+            "MassTransit": {
+              "target": "Package",
+              "version": "[9.2.3, )"
+            },
+            "MassTransit.RabbitMQ": {
+              "target": "Package",
+              "version": "[9.2.3, )"
+            },
             "MediatR": {
               "target": "Package",
-              "version": "[14.1.0, )"
+              "version": "[14.2.0, )"
             },
             "MediatR.Extensions.Autofac.DependencyInjection": {
               "target": "Package",

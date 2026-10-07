@@ -15,7 +15,9 @@
           "IDP.Application": "1.0.0",
           "IDP.Domain": "1.0.0",
           "IDP.Infra": "1.0.0",
-          "MediatR": "14.1.0",
+          "MassTransit": "9.2.3",
+          "MassTransit.RabbitMQ": "9.2.3",
+          "MediatR": "14.2.0",
           "MediatR.Extensions.Autofac.DependencyInjection": "14.1.0",
           "MediatR.Extensions.Microsoft.DependencyInjectionFixed": "5.1.2",
           "Microsoft.AspNetCore.OpenApi": "10.0.12",
@@ -129,7 +131,38 @@
           }
         }
       },
-      "MediatR/14.1.0": {
+      "MassTransit/9.2.3": {
+        "dependencies": {
+          "MassTransit.Abstractions": "9.2.3"
+        },
+        "runtime": {
+          "lib/net10.0/MassTransit.dll": {
+            "assemblyVersion": "9.2.3.0",
+            "fileVersion": "9.2.3.0"
+          }
+        }
+      },
+      "MassTransit.Abstractions/9.2.3": {
+        "runtime": {
+          "lib/net10.0/MassTransit.Abstractions.dll": {
+            "assemblyVersion": "9.2.3.0",
+            "fileVersion": "9.2.3.0"
+          }
+        }
+      },
+      "MassTransit.RabbitMQ/9.2.3": {
+        "dependencies": {
+          "MassTransit": "9.2.3",
+          "RabbitMQ.Client": "7.2.2"
+        },
+        "runtime": {
+          "lib/net10.0/MassTransit.RabbitMqTransport.dll": {
+            "assemblyVersion": "9.2.3.0",
+            "fileVersion": "9.2.3.0"
+          }
+        }
+      },
+      "MediatR/14.2.0": {
         "dependencies": {
           "MediatR.Contracts": "2.0.1",
           "Microsoft.IdentityModel.JsonWebTokens": "8.23.0"
@@ -137,7 +170,7 @@
         "runtime": {
           "lib/net10.0/MediatR.dll": {
             "assemblyVersion": "14.0.0.0",
-            "fileVersion": "14.1.0.0"
+            "fileVersion": "14.2.0.0"
           }
         }
       },
@@ -152,7 +185,7 @@
       "MediatR.Extensions.Autofac.DependencyInjection/14.1.0": {
         "dependencies": {
           "Autofac": "9.1.0",
-          "MediatR": "14.1.0"
+          "MediatR": "14.2.0"
         },
         "runtime": {
           "lib/netstandard2.0/MediatR.Extensions.Autofac.DependencyInjection.dll": {
@@ -163,7 +196,7 @@
       },
       "MediatR.Extensions.Microsoft.DependencyInjectionFixed/5.1.2": {
         "dependencies": {
-          "MediatR": "14.1.0"
+          "MediatR": "14.2.0"
         },
         "runtime": {
           "lib/netstandard2.0/MediatR.Extensions.Microsoft.DependencyInjection.dll": {
@@ -894,6 +927,14 @@
           }
         }
       },
+      "RabbitMQ.Client/7.2.2": {
+        "runtime": {
+          "lib/net8.0/RabbitMQ.Client.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.2.2.0"
+          }
+        }
+      },
       "StackExchange.Redis/2.7.27": {
         "dependencies": {
           "Pipelines.Sockets.Unofficial": "2.2.8"
@@ -1070,7 +1111,7 @@
       },
       "Auth/1.0.0": {
         "dependencies": {
-          "MediatR": "14.1.0",
+          "MediatR": "14.2.0",
           "MediatR.Extensions.Microsoft.DependencyInjectionFixed": "5.1.2",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.12",
           "Microsoft.Extensions.Caching.StackExchangeRedis": "10.0.12",
@@ -1089,7 +1130,7 @@
           "Auth": "1.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "IDP.Domain": "1.0.0",
-          "MediatR": "14.1.0",
+          "MediatR": "14.2.0",
           "MediatR.Extensions.Microsoft.DependencyInjectionFixed": "5.1.2"
         },
         "runtime": {
@@ -1101,7 +1142,7 @@
       },
       "IDP.Domain/1.0.0": {
         "dependencies": {
-          "MediatR": "14.1.0",
+          "MediatR": "14.2.0",
           "MediatR.Extensions.Microsoft.DependencyInjectionFixed": "5.1.2"
         },
         "runtime": {
@@ -1114,7 +1155,7 @@
       "IDP.Infra/1.0.0": {
         "dependencies": {
           "IDP.Domain": "1.0.0",
-          "MediatR": "14.1.0",
+          "MediatR": "14.2.0",
           "MediatR.Extensions.Microsoft.DependencyInjectionFixed": "5.1.2",
           "Microsoft.EntityFrameworkCore": "10.0.12",
           "Microsoft.EntityFrameworkCore.SqlServer": "10.0.12",
@@ -1207,12 +1248,33 @@
       "path": "humanizer.core/2.14.1",
       "hashPath": "humanizer.core.2.14.1.nupkg.sha512"
     },
-    "MediatR/14.1.0": {
+    "MassTransit/9.2.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-pdxza1pLqAk+06LV3THzNJrw5K5Ah6EC17TEkoC90gsAxwtXDJAQrGuDSDinHGgxWKWEn5ebqTNN3k1bLJOb0g==",
-      "path": "mediatr/14.1.0",
-      "hashPath": "mediatr.14.1.0.nupkg.sha512"
+      "sha512": "sha512-exbI8yF4w8swAOj5cHiZVyWWWb/O/d0x1hBrD8nvFcAk4iMjEyvg1i+8zvgOsfYkSZp4horycBJVLAQPv1gFbw==",
+      "path": "masstransit/9.2.3",
+      "hashPath": "masstransit.9.2.3.nupkg.sha512"
+    },
+    "MassTransit.Abstractions/9.2.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-D0y98XbWq4Su8YCn1Y3WvQKy3Mn6SS5DGp1vkICy0TpPPzGQI6EPTMmITiim0KCf/WXgh/mRIP9UswIZVDuRjw==",
+      "path": "masstransit.abstractions/9.2.3",
+      "hashPath": "masstransit.abstractions.9.2.3.nupkg.sha512"
+    },
+    "MassTransit.RabbitMQ/9.2.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-leInIa/ogii5hzKmqbU8DdlYGDUwODoUcIcx8Vlu4NZjjmGoiCdPybDdgeRpSt/ebmar0MHL9m4sainogXU6jQ==",
+      "path": "masstransit.rabbitmq/9.2.3",
+      "hashPath": "masstransit.rabbitmq.9.2.3.nupkg.sha512"
+    },
+    "MediatR/14.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1vqNVS6ijU0IF78vDfIE99pi0iTa+M/1ztRlM98P+KL+Loi/O4knaR2+ex0AqbT5xBl01VFryjuYUAFtvGwzOQ==",
+      "path": "mediatr/14.2.0",
+      "hashPath": "mediatr.14.2.0.nupkg.sha512"
     },
     "MediatR.Contracts/2.0.1": {
       "type": "package",
@@ -1507,6 +1569,13 @@
       "sha512": "sha512-zG2FApP5zxSx6OcdJQLbZDk2AVlN2BNQD6MorwIfV6gVj0RRxWPEp2LXAxqDGZqeNV1Zp0BNPcNaey/GXmTdvQ==",
       "path": "pipelines.sockets.unofficial/2.2.8",
       "hashPath": "pipelines.sockets.unofficial.2.2.8.nupkg.sha512"
+    },
+    "RabbitMQ.Client/7.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-k4b6RnTXpLbsF96V93ooNYxgPMnoA2tEm24B6AXNJr1mG8wwNYdA1XJtgU66L5xqeGyveS7SJriRzlX3cbqQNA==",
+      "path": "rabbitmq.client/7.2.2",
+      "hashPath": "rabbitmq.client.7.2.2.nupkg.sha512"
     },
     "StackExchange.Redis/2.7.27": {
       "type": "package",

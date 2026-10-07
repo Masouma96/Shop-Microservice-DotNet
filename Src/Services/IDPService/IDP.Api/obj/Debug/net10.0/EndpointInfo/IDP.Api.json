@@ -67,6 +67,37 @@
         }
       }
     },
+    "/api/v1/Auth/VerifyOtp": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VerifyOtpCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VerifyOtpCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/VerifyOtpCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/v1/Users/Insert": {
       "post": {
         "tags": [
@@ -115,15 +146,19 @@
         "additionalProperties": false
       },
       "AuthQuery": {
+        "required": [
+          "mobileNumber",
+          "otpCode"
+        ],
         "type": "object",
         "properties": {
-          "userName": {
+          "mobileNumber": {
             "type": "string",
             "nullable": true
           },
-          "password": {
-            "type": "string",
-            "nullable": true
+          "otpCode": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false
@@ -140,6 +175,20 @@
             "type": "string"
           },
           "codeNumber": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "VerifyOtpCommand": {
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "inputCode": {
             "type": "string",
             "nullable": true
           }

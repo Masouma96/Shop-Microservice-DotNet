@@ -6,6 +6,7 @@ E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Domain\obj\Debug\net10
 E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Domain\obj\Debug\net10.0\IDP.Domain.AssemblyInfoInputs.cache
 E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Domain\obj\Debug\net10.0\IDP.Domain.AssemblyInfo.cs
 E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Domain\obj\Debug\net10.0\IDP.Domain.csproj.CoreCompileInputs.cache
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Domain\obj\Debug\net10.0\IDP.Domain.sourcelink.json
 E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Domain\obj\Debug\net10.0\IDP.Domain.dll
 E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Domain\obj\Debug\net10.0\refint\IDP.Domain.dll
 E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Domain\obj\Debug\net10.0\IDP.Domain.pdb

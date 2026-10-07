@@ -1,9 +1,11 @@
 ﻿using Asp.Versioning;
+using IDP.Application.Commands.Auth;
+
 using IDP.Application.Query.Auth;
 using MediatR;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
-using IDP.Application.Commands.Auth;
 
 namespace IDP.Api.Controllers.V1
 {
@@ -35,6 +37,15 @@ namespace IDP.Api.Controllers.V1
             var res = await _mediator.Send(authCommand);
 
             return Ok(res);
+        }
+
+        [HttpPost("VerifyOtp")]
+        public async Task<IActionResult> VerifyOtp([FromBody] VerifyOtpCommand verifyOtpCommand)
+        {
+            var res = await _mediator.Send(verifyOtpCommand);
+            if (!res) return BadRequest("Invalid or expired code.");
+
+            return Ok(new { Message = "Authentication Successful" });
         }
 
     }

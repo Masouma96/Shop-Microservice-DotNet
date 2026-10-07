@@ -16,6 +16,9 @@ E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Api\bin\Debug\net10.0\
 E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Api\bin\Debug\net10.0\Azure.Core.dll
 E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Api\bin\Debug\net10.0\Azure.Identity.dll
 E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Api\bin\Debug\net10.0\Humanizer.dll
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Api\bin\Debug\net10.0\MassTransit.dll
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Api\bin\Debug\net10.0\MassTransit.Abstractions.dll
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Api\bin\Debug\net10.0\MassTransit.RabbitMqTransport.dll
 E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Api\bin\Debug\net10.0\MediatR.dll
 E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Api\bin\Debug\net10.0\MediatR.Contracts.dll
 E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Api\bin\Debug\net10.0\MediatR.Extensions.Autofac.DependencyInjection.dll
@@ -59,6 +62,7 @@ E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Api\bin\Debug\net10.0\
 E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Api\bin\Debug\net10.0\NServiceBus.Core.dll
 E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Api\bin\Debug\net10.0\NServiceBus.MessageInterfaces.dll
 E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Api\bin\Debug\net10.0\Pipelines.Sockets.Unofficial.dll
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Api\bin\Debug\net10.0\RabbitMQ.Client.dll
 E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Api\bin\Debug\net10.0\StackExchange.Redis.dll
 E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Api\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
 E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Api\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
@@ -180,6 +184,7 @@ E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Api\obj\Debug\net10.0\
 E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Api\obj\Debug\net10.0\IDP.Api.csproj.CoreCompileInputs.cache
 E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Api\obj\Debug\net10.0\IDP.Api.MvcApplicationPartsAssemblyInfo.cs
 E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Api\obj\Debug\net10.0\IDP.Api.MvcApplicationPartsAssemblyInfo.cache
+E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Api\obj\Debug\net10.0\IDP.Api.sourcelink.json
 E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Api\obj\Debug\net10.0\rjimswa.dswa.cache.json
 E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Api\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
 E:\project\EshopProject\Eshop\Src\Services\IDPService\IDP.Api\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
