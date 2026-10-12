@@ -383,6 +383,25 @@
         }
       }
     },
+    "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IBus\\EventBus\\EventBus.csproj": {
+      "restore": {
+        "projectUniqueName": "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IBus\\EventBus\\EventBus.csproj",
+        "projectName": "EventBus",
+        "projectPath": "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IBus\\EventBus\\EventBus.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net472": {
+            "framework": "net472",
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "framework": "net472"
+        }
+      }
+    },
     "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IDPService\\IDP.Application\\IDP.Application.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -415,6 +434,9 @@
               "E:\\project\\EshopProject\\Eshop\\Src\\Common\\Auth\\Auth.csproj": {
                 "projectPath": "E:\\project\\EshopProject\\Eshop\\Src\\Common\\Auth\\Auth.csproj"
               },
+              "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IBus\\EventBus\\EventBus.csproj": {
+                "projectPath": "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IBus\\EventBus\\EventBus.csproj"
+              },
               "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IDPService\\IDP.Domain\\IDP.Domain.csproj": {
                 "projectPath": "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IDPService\\IDP.Domain\\IDP.Domain.csproj"
               }
@@ -441,6 +463,14 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[12.0.1, )"
+            },
+            "DotNetCore.CAP": {
+              "target": "Package",
+              "version": "[10.0.2, )"
+            },
+            "MassTransit": {
+              "target": "Package",
+              "version": "[9.2.3, )"
             },
             "MediatR": {
               "target": "Package",

@@ -110,38 +110,149 @@
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
-      "Azure.Core/1.50.0": {
+      "Carter/10.0.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Bcl.AsyncInterfaces": "8.0.0",
-          "System.ClientModel": "1.8.0",
-          "System.Memory.Data": "8.0.1"
+          "Carter.Analyzers": "10.0.0",
+          "FluentValidation": "12.1.0",
+          "Microsoft.Extensions.DependencyModel": "10.0.0"
         },
         "compile": {
-          "lib/net8.0/Azure.Core.dll": {
+          "lib/net10.0/Carter.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Carter.dll": {
+            "related": ".pdb"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Carter.Analyzers/10.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.CSharp": "4.14.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Carter.Analyzers.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Carter.Analyzers.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "Consul/1.8.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Consul.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/Azure.Core.dll": {
+          "lib/netstandard2.0/Consul.dll": {
             "related": ".xml"
           }
         }
       },
-      "Azure.Identity/1.17.1": {
+      "Dapper/2.1.89": {
         "type": "package",
-        "dependencies": {
-          "Azure.Core": "1.50.0",
-          "Microsoft.Identity.Client": "4.78.0",
-          "Microsoft.Identity.Client.Extensions.Msal": "4.78.0"
-        },
         "compile": {
-          "lib/net8.0/Azure.Identity.dll": {
+          "lib/net10.0/Dapper.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/Azure.Identity.dll": {
+          "lib/net10.0/Dapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "DotNetCore.CAP/10.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/DotNetCore.CAP.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/DotNetCore.CAP.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "DotNetCore.CAP.Dashboard/10.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Consul": "1.8.0",
+          "DotNetCore.CAP": "10.0.2"
+        },
+        "compile": {
+          "lib/net8.0/DotNetCore.CAP.Dashboard.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/DotNetCore.CAP.Dashboard.dll": {
+            "related": ".pdb"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "DotNetCore.CAP.RabbitMQ/10.0.2": {
+        "type": "package",
+        "dependencies": {
+          "DotNetCore.CAP": "10.0.2",
+          "RabbitMQ.Client": "7.2.1"
+        },
+        "compile": {
+          "lib/net8.0/DotNetCore.CAP.RabbitMQ.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/DotNetCore.CAP.RabbitMQ.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "DotNetCore.CAP.SqlServer/10.0.2": {
+        "type": "package",
+        "dependencies": {
+          "DotNetCore.CAP": "10.0.2",
+          "Microsoft.Data.SqlClient": "7.0.1",
+          "Microsoft.EntityFrameworkCore.Relational": "10.0.0"
+        },
+        "compile": {
+          "lib/net10.0/DotNetCore.CAP.SqlServer.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/DotNetCore.CAP.SqlServer.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "FluentValidation/12.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/FluentValidation.dll": {
             "related": ".xml"
           }
         }
@@ -157,6 +268,27 @@
           "lib/net6.0/Humanizer.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Mapster/10.0.13": {
+        "type": "package",
+        "dependencies": {
+          "Mapster.Core": "10.0.13"
+        },
+        "compile": {
+          "lib/net10.0/Mapster.dll": {}
+        },
+        "runtime": {
+          "lib/net10.0/Mapster.dll": {}
+        }
+      },
+      "Mapster.Core/10.0.13": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Mapster.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Mapster.Core.dll": {}
         }
       },
       "MassTransit/9.2.3": {
@@ -188,6 +320,23 @@
           }
         }
       },
+      "MassTransit.EntityFrameworkCore/9.2.3": {
+        "type": "package",
+        "dependencies": {
+          "MassTransit": "9.2.3",
+          "Microsoft.EntityFrameworkCore.Relational": "10.0.0"
+        },
+        "compile": {
+          "lib/net10.0/MassTransit.EntityFrameworkCoreIntegration.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/MassTransit.EntityFrameworkCoreIntegration.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "MassTransit.RabbitMQ/9.2.3": {
         "type": "package",
         "dependencies": {
@@ -201,6 +350,24 @@
         },
         "runtime": {
           "lib/net10.0/MassTransit.RabbitMqTransport.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MassTransit.SqlTransport.SqlServer/9.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Dapper": "2.1.89",
+          "MassTransit": "9.2.3",
+          "Microsoft.Data.SqlClient": "5.2.3"
+        },
+        "compile": {
+          "lib/net10.0/MassTransit.SqlTransport.SqlServer.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/MassTransit.SqlTransport.SqlServer.dll": {
             "related": ".xml"
           }
         }
@@ -305,19 +472,6 @@
           "build/Microsoft.AspNetCore.OpenApi.targets": {}
         }
       },
-      "Microsoft.Bcl.AsyncInterfaces/8.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "Microsoft.Bcl.Cryptography/10.0.2": {
         "type": "package",
         "compile": {
@@ -360,7 +514,7 @@
           "Microsoft.CodeAnalysis.Analyzers": "3.11.0"
         },
         "compile": {
-          "lib/net9.0/_._": {
+          "lib/net9.0/Microsoft.CodeAnalysis.dll": {
             "related": ".pdb;.xml"
           }
         },
@@ -418,7 +572,7 @@
           "Microsoft.CodeAnalysis.Common": "[5.0.0]"
         },
         "compile": {
-          "lib/net9.0/_._": {
+          "lib/net9.0/Microsoft.CodeAnalysis.CSharp.dll": {
             "related": ".pdb;.xml"
           }
         },
@@ -660,20 +814,18 @@
           }
         }
       },
-      "Microsoft.Data.SqlClient/6.1.6": {
+      "Microsoft.Data.SqlClient/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Azure.Core": "1.50.0",
-          "Azure.Identity": "1.17.1",
+          "Microsoft.Bcl.Cryptography": "9.0.13",
+          "Microsoft.Data.SqlClient.Extensions.Abstractions": "1.0.0",
+          "Microsoft.Data.SqlClient.Internal.Logging": "1.0.0",
           "Microsoft.Data.SqlClient.SNI.runtime": "6.0.2",
-          "Microsoft.Identity.Client": "4.84.2",
-          "Microsoft.Identity.Client.Broker": "4.84.2",
-          "Microsoft.IdentityModel.JsonWebTokens": "7.7.1",
-          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "7.7.1",
+          "Microsoft.IdentityModel.JsonWebTokens": "8.16.0",
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "8.16.0",
           "Microsoft.SqlServer.Server": "1.0.0",
-          "System.Configuration.ConfigurationManager": "9.0.11",
-          "System.IdentityModel.Tokens.Jwt": "7.7.1",
-          "System.Security.Cryptography.Pkcs": "9.0.11"
+          "System.Configuration.ConfigurationManager": "9.0.13",
+          "System.Security.Cryptography.Pkcs": "9.0.13"
         },
         "compile": {
           "ref/net9.0/Microsoft.Data.SqlClient.dll": {
@@ -734,6 +886,35 @@
           "runtimes/win/lib/net9.0/Microsoft.Data.SqlClient.dll": {
             "assetType": "runtime",
             "rid": "win"
+          }
+        }
+      },
+      "Microsoft.Data.SqlClient.Extensions.Abstractions/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Data.SqlClient.Internal.Logging": "1.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Data.SqlClient.Extensions.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Data.SqlClient.Extensions.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Data.SqlClient.Internal.Logging/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Data.SqlClient.Internal.Logging.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Data.SqlClient.Internal.Logging.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -880,7 +1061,7 @@
       "Microsoft.Extensions.DependencyModel/10.0.12": {
         "type": "package",
         "compile": {
-          "lib/net10.0/_._": {
+          "lib/net10.0/Microsoft.Extensions.DependencyModel.dll": {
             "related": ".xml"
           }
         },
@@ -891,94 +1072,6 @@
         },
         "build": {
           "buildTransitive/net8.0/_._": {}
-        }
-      },
-      "Microsoft.Identity.Client/4.84.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.IdentityModel.Abstractions": "8.14.0"
-        },
-        "compile": {
-          "lib/net8.0/Microsoft.Identity.Client.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.Identity.Client.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.Identity.Client.Broker/4.84.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Identity.Client": "4.84.2",
-          "Microsoft.Identity.Client.NativeInterop": "0.20.6"
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.Identity.Client.Broker.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Identity.Client.Broker.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.Identity.Client.Extensions.Msal/4.78.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Identity.Client": "4.78.0",
-          "System.Security.Cryptography.ProtectedData": "4.5.0"
-        },
-        "compile": {
-          "lib/net8.0/Microsoft.Identity.Client.Extensions.Msal.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.Identity.Client.Extensions.Msal.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.Identity.Client.NativeInterop/0.20.6": {
-        "type": "package",
-        "compile": {
-          "lib/net9.0/Microsoft.Identity.Client.NativeInterop.dll": {}
-        },
-        "runtime": {
-          "lib/net9.0/Microsoft.Identity.Client.NativeInterop.dll": {}
-        },
-        "build": {
-          "buildtransitive/netstandard2.0/Microsoft.Identity.Client.NativeInterop.targets": {}
-        },
-        "runtimeTargets": {
-          "runtimes/linux-x64/native/libmsalruntime.so": {
-            "assetType": "native",
-            "rid": "linux-x64"
-          },
-          "runtimes/osx-arm64/native/msalruntime_arm64.dylib": {
-            "assetType": "native",
-            "rid": "osx-arm64"
-          },
-          "runtimes/osx-x64/native/msalruntime.dylib": {
-            "assetType": "native",
-            "rid": "osx-x64"
-          },
-          "runtimes/win-arm64/native/msalruntime_arm64.dll": {
-            "assetType": "native",
-            "rid": "win-arm64"
-          },
-          "runtimes/win-x64/native/msalruntime.dll": {
-            "assetType": "native",
-            "rid": "win-x64"
-          },
-          "runtimes/win-x86/native/msalruntime_x86.dll": {
-            "assetType": "native",
-            "rid": "win-x86"
-          }
         }
       },
       "Microsoft.IdentityModel.Abstractions/8.23.0": {
@@ -1313,22 +1406,6 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "System.ClientModel/1.8.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Memory.Data": "8.0.1"
-        },
-        "compile": {
-          "lib/net9.0/System.ClientModel.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net9.0/System.ClientModel.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "System.CodeDom/6.0.0": {
         "type": "package",
         "compile": {
@@ -1455,10 +1532,10 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-      "System.Configuration.ConfigurationManager/9.0.11": {
+      "System.Configuration.ConfigurationManager/9.0.13": {
         "type": "package",
         "dependencies": {
-          "System.Security.Cryptography.ProtectedData": "9.0.11"
+          "System.Security.Cryptography.ProtectedData": "9.0.13"
         },
         "compile": {
           "lib/net9.0/_._": {
@@ -1507,23 +1584,7 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-      "System.Memory.Data/8.0.1": {
-        "type": "package",
-        "compile": {
-          "lib/net8.0/System.Memory.Data.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/System.Memory.Data.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net6.0/_._": {}
-        }
-      },
-      "System.Security.Cryptography.Pkcs/9.0.11": {
+      "System.Security.Cryptography.Pkcs/9.0.13": {
         "type": "package",
         "compile": {
           "lib/net9.0/System.Security.Cryptography.Pkcs.dll": {
@@ -1545,10 +1606,10 @@
           }
         }
       },
-      "System.Security.Cryptography.ProtectedData/9.0.11": {
+      "System.Security.Cryptography.ProtectedData/9.0.13": {
         "type": "package",
         "compile": {
-          "lib/net9.0/System.Security.Cryptography.ProtectedData.dll": {
+          "lib/net9.0/_._": {
             "related": ".xml"
           }
         },
@@ -1579,13 +1640,25 @@
           "bin/placeholder/Auth.dll": {}
         }
       },
+      "EventBus/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/EventBus.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EventBus.dll": {}
+        }
+      },
       "IDP.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "Auth": "1.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
+          "DotNetCore.CAP": "10.0.2",
+          "EventBus": "1.0.0",
           "IDP.Domain": "1.0.0",
+          "MassTransit": "9.2.3",
           "MediatR": "14.1.0",
           "MediatR.Extensions.Microsoft.DependencyInjectionFixed": "5.1.2"
         },
@@ -1629,6 +1702,28 @@
         "runtime": {
           "bin/placeholder/IDP.Infra.dll": {}
         }
+      },
+      "VerticalNotification/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Carter": "10.0.0",
+          "EventBus": "1.0.0",
+          "IDP.Application": "1.0.0",
+          "Mapster": "10.0.13",
+          "MassTransit": "9.2.3",
+          "MediatR": "14.2.0",
+          "Microsoft.AspNetCore.OpenApi": "10.0.12"
+        },
+        "compile": {
+          "bin/placeholder/VerticalNotification.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VerticalNotification.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -1755,44 +1850,154 @@
         "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll"
       ]
     },
-    "Azure.Core/1.50.0": {
-      "sha512": "GBNKZEhdIbTXxedvD3R7I/yDVFX9jJJEz02kCziFSJxspSQ5RMHc3GktulJ1s7+ffXaXD7kMgrtdQTaggyInLw==",
+    "Carter/10.0.0": {
+      "sha512": "TMSfoaIwEuQBqDxt0EdUmGLe6yLnkEBwYeWunyDfxhDPmDKtV/o1tDYsNWG5eMO6ontHonFttIMwbsg+ddi8YQ==",
       "type": "package",
-      "path": "azure.core/1.50.0",
+      "path": "carter/10.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "CHANGELOG.md",
         "README.md",
-        "azure.core.1.50.0.nupkg.sha512",
-        "azure.core.nuspec",
-        "azureicon.png",
-        "lib/net462/Azure.Core.dll",
-        "lib/net462/Azure.Core.xml",
-        "lib/net472/Azure.Core.dll",
-        "lib/net472/Azure.Core.xml",
-        "lib/net8.0/Azure.Core.dll",
-        "lib/net8.0/Azure.Core.xml",
-        "lib/netstandard2.0/Azure.Core.dll",
-        "lib/netstandard2.0/Azure.Core.xml"
+        "analyzers/dotnet/cs/Carter.Analyzers.dll",
+        "carter.10.0.0.nupkg.sha512",
+        "carter.nuspec",
+        "carterlogo.png",
+        "lib/net10.0/Carter.dll",
+        "lib/net10.0/Carter.pdb"
       ]
     },
-    "Azure.Identity/1.17.1": {
-      "sha512": "MSZkBrctcpiGxs9Cvr2VKKoN6qFLZlP3I6xuCWJ9iTgitI5Rgxtk5gfOSpXPZE3+CJmZ/mnqpQyGyjawFn5Vvg==",
+    "Carter.Analyzers/10.0.0": {
+      "sha512": "NC8nnaoCCKUDkZgDXIk7p7IgXOYsAYrOPp4a9AwFPGSoa92VqOnpp/O4YeKicnMByNigTCNzua7yxIbSFfRTqA==",
       "type": "package",
-      "path": "azure.identity/1.17.1",
+      "path": "carter.analyzers/10.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "CHANGELOG.md",
         "README.md",
-        "azure.identity.1.17.1.nupkg.sha512",
-        "azure.identity.nuspec",
-        "azureicon.png",
-        "lib/net8.0/Azure.Identity.dll",
-        "lib/net8.0/Azure.Identity.xml",
-        "lib/netstandard2.0/Azure.Identity.dll",
-        "lib/netstandard2.0/Azure.Identity.xml"
+        "carter.analyzers.10.0.0.nupkg.sha512",
+        "carter.analyzers.nuspec",
+        "carterlogo.png",
+        "lib/netstandard2.0/Carter.Analyzers.dll",
+        "lib/netstandard2.0/Carter.Analyzers.pdb"
+      ]
+    },
+    "Consul/1.8.0": {
+      "sha512": "flKNz6Swyt+pYBJ5dekN1X6PJYUaeNAaNC0dAWhudTd0t2vR34G0QXmr5KyApI7OP1rGMwY3xx133Dc9IvOS6Q==",
+      "type": "package",
+      "path": "consul/1.8.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "consul.1.8.0.nupkg.sha512",
+        "consul.nuspec",
+        "lib/net461/Consul.dll",
+        "lib/net461/Consul.xml",
+        "lib/netstandard2.0/Consul.dll",
+        "lib/netstandard2.0/Consul.xml"
+      ]
+    },
+    "Dapper/2.1.89": {
+      "sha512": "1VjFE664wnxvuhlgP8kS4PeFFF4jqD3VkbIHW6Zlc52zuibgcz5ICnIHcQXlTp6pURpPNGLV0ZpNe5x9KePJnA==",
+      "type": "package",
+      "path": "dapper/2.1.89",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Dapper.png",
+        "dapper.2.1.89.nupkg.sha512",
+        "dapper.nuspec",
+        "lib/net10.0/Dapper.dll",
+        "lib/net10.0/Dapper.xml",
+        "lib/net461/Dapper.dll",
+        "lib/net461/Dapper.xml",
+        "lib/net8.0/Dapper.dll",
+        "lib/net8.0/Dapper.xml",
+        "lib/netstandard2.0/Dapper.dll",
+        "lib/netstandard2.0/Dapper.xml",
+        "readme.md"
+      ]
+    },
+    "DotNetCore.CAP/10.0.2": {
+      "sha512": "AY1PbSDa0IR4c2YdoRd3tCh5TfvdjziX1anKm0igUmhvqbVBJLX5bVhSEbbITcEV5dHiM8+rWc7Ss96DHFzuIg==",
+      "type": "package",
+      "path": "dotnetcore.cap/10.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "dotnetcore.cap.10.0.2.nupkg.sha512",
+        "dotnetcore.cap.nuspec",
+        "lib/net10.0/DotNetCore.CAP.dll",
+        "lib/net10.0/DotNetCore.CAP.pdb",
+        "lib/net10.0/DotNetCore.CAP.xml",
+        "lib/net8.0/DotNetCore.CAP.dll",
+        "lib/net8.0/DotNetCore.CAP.pdb",
+        "lib/net8.0/DotNetCore.CAP.xml",
+        "lib/net9.0/DotNetCore.CAP.dll",
+        "lib/net9.0/DotNetCore.CAP.pdb",
+        "lib/net9.0/DotNetCore.CAP.xml",
+        "logo.png"
+      ]
+    },
+    "DotNetCore.CAP.Dashboard/10.0.2": {
+      "sha512": "/pgQGu37I2N6lJPFE0874MFXNmZraFWVMaUtZkhKYuDgTDx0+tA05PBZ6nu83gMEhuZJKthkduiVxN/t0XAm6w==",
+      "type": "package",
+      "path": "dotnetcore.cap.dashboard/10.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dotnetcore.cap.dashboard.10.0.2.nupkg.sha512",
+        "dotnetcore.cap.dashboard.nuspec",
+        "lib/net8.0/DotNetCore.CAP.Dashboard.dll",
+        "lib/net8.0/DotNetCore.CAP.Dashboard.pdb",
+        "logo.png"
+      ]
+    },
+    "DotNetCore.CAP.RabbitMQ/10.0.2": {
+      "sha512": "xMOcKsChPAD3RbIVew5gHmvmfzHovBl0KfL0F6aPkmARWoRFHQsPDD58dz/W14Y504pgK2ntXAqNkmVW8SOOVA==",
+      "type": "package",
+      "path": "dotnetcore.cap.rabbitmq/10.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dotnetcore.cap.rabbitmq.10.0.2.nupkg.sha512",
+        "dotnetcore.cap.rabbitmq.nuspec",
+        "lib/net8.0/DotNetCore.CAP.RabbitMQ.dll",
+        "lib/net8.0/DotNetCore.CAP.RabbitMQ.pdb",
+        "logo.png"
+      ]
+    },
+    "DotNetCore.CAP.SqlServer/10.0.2": {
+      "sha512": "cupPFU5k8g5pMQsmXZ9UXk78TFg/g1WLugb2wGoqIblFPfKtv2yAF/ZVlxf63ja/cCLUmWx1Rq52RnFVwyJZYw==",
+      "type": "package",
+      "path": "dotnetcore.cap.sqlserver/10.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dotnetcore.cap.sqlserver.10.0.2.nupkg.sha512",
+        "dotnetcore.cap.sqlserver.nuspec",
+        "lib/net10.0/DotNetCore.CAP.SqlServer.dll",
+        "lib/net10.0/DotNetCore.CAP.SqlServer.pdb",
+        "lib/net8.0/DotNetCore.CAP.SqlServer.dll",
+        "lib/net8.0/DotNetCore.CAP.SqlServer.pdb",
+        "lib/net9.0/DotNetCore.CAP.SqlServer.dll",
+        "lib/net9.0/DotNetCore.CAP.SqlServer.pdb",
+        "logo.png"
+      ]
+    },
+    "FluentValidation/12.1.0": {
+      "sha512": "FqWEn8BdbbFEHGanj9K8SVo+LyBeFWy2rolaE+e1TNUbifr8M7Iss+I1AqTSc8kjKtvjl/WN4XIHiRpslh42bA==",
+      "type": "package",
+      "path": "fluentvalidation/12.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.12.1.0.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net8.0/FluentValidation.dll",
+        "lib/net8.0/FluentValidation.xml"
       ]
     },
     "Humanizer.Core/2.14.1": {
@@ -1811,6 +2016,35 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "Mapster/10.0.13": {
+      "sha512": "/FaFSm4W6rQp5kEZa7yTtvHH2yGmuC1p22Bg2zi83+W8SMJ+5RBTEWgRK0JS2S8jIdXj2hm2s4z1egjkE2azoQ==",
+      "type": "package",
+      "path": "mapster/10.0.13",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net10.0/Mapster.dll",
+        "lib/net8.0/Mapster.dll",
+        "lib/net9.0/Mapster.dll",
+        "lib/netstandard2.0/Mapster.dll",
+        "mapster.10.0.13.nupkg.sha512",
+        "mapster.nuspec"
+      ]
+    },
+    "Mapster.Core/10.0.13": {
+      "sha512": "fLj/MDJy16QiL7IULC0+e2YXh9nNDhtzdNl13R6CI0Qh6181eadA6EHykWkJWgTHdMjC5Ured3fq5x1QV7U9vg==",
+      "type": "package",
+      "path": "mapster.core/10.0.13",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/netstandard2.0/Mapster.Core.dll",
+        "mapster.core.10.0.13.nupkg.sha512",
+        "mapster.core.nuspec"
       ]
     },
     "MassTransit/9.2.3": {
@@ -1859,6 +2093,25 @@
         "mt-logo-small.png"
       ]
     },
+    "MassTransit.EntityFrameworkCore/9.2.3": {
+      "sha512": "6Lgb0SrV9nIkzz5Ir8w6ip7lZ0dj++xIwg9zUcVjViPMCmCPDlYr+WtNgKltmy+nHra0/e8wWERrOKi4Cdtp9w==",
+      "type": "package",
+      "path": "masstransit.entityframeworkcore/9.2.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "NuGet.README.md",
+        "lib/net10.0/MassTransit.EntityFrameworkCoreIntegration.dll",
+        "lib/net10.0/MassTransit.EntityFrameworkCoreIntegration.xml",
+        "lib/net8.0/MassTransit.EntityFrameworkCoreIntegration.dll",
+        "lib/net8.0/MassTransit.EntityFrameworkCoreIntegration.xml",
+        "lib/net9.0/MassTransit.EntityFrameworkCoreIntegration.dll",
+        "lib/net9.0/MassTransit.EntityFrameworkCoreIntegration.xml",
+        "masstransit.entityframeworkcore.9.2.3.nupkg.sha512",
+        "masstransit.entityframeworkcore.nuspec",
+        "mt-logo-small.png"
+      ]
+    },
     "MassTransit.RabbitMQ/9.2.3": {
       "sha512": "leInIa/ogii5hzKmqbU8DdlYGDUwODoUcIcx8Vlu4NZjjmGoiCdPybDdgeRpSt/ebmar0MHL9m4sainogXU6jQ==",
       "type": "package",
@@ -1879,6 +2132,29 @@
         "lib/netstandard2.0/MassTransit.RabbitMqTransport.xml",
         "masstransit.rabbitmq.9.2.3.nupkg.sha512",
         "masstransit.rabbitmq.nuspec",
+        "mt-logo-small.png"
+      ]
+    },
+    "MassTransit.SqlTransport.SqlServer/9.2.3": {
+      "sha512": "cTnlhdI+OBind1bhwWsf6Qty2ufy5U3WHg0y99I0QScHkZUjWsZIO+Us4LFjHk4Py8RrZqA0lbM+Dxc5em/+ZQ==",
+      "type": "package",
+      "path": "masstransit.sqltransport.sqlserver/9.2.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "NuGet.README.md",
+        "lib/net10.0/MassTransit.SqlTransport.SqlServer.dll",
+        "lib/net10.0/MassTransit.SqlTransport.SqlServer.xml",
+        "lib/net472/MassTransit.SqlTransport.SqlServer.dll",
+        "lib/net472/MassTransit.SqlTransport.SqlServer.xml",
+        "lib/net8.0/MassTransit.SqlTransport.SqlServer.dll",
+        "lib/net8.0/MassTransit.SqlTransport.SqlServer.xml",
+        "lib/net9.0/MassTransit.SqlTransport.SqlServer.dll",
+        "lib/net9.0/MassTransit.SqlTransport.SqlServer.xml",
+        "lib/netstandard2.0/MassTransit.SqlTransport.SqlServer.dll",
+        "lib/netstandard2.0/MassTransit.SqlTransport.SqlServer.xml",
+        "masstransit.sqltransport.sqlserver.9.2.3.nupkg.sha512",
+        "masstransit.sqltransport.sqlserver.nuspec",
         "mt-logo-small.png"
       ]
     },
@@ -1978,30 +2254,6 @@
         "lib/net10.0/Microsoft.AspNetCore.OpenApi.xml",
         "microsoft.aspnetcore.openapi.10.0.12.nupkg.sha512",
         "microsoft.aspnetcore.openapi.nuspec"
-      ]
-    },
-    "Microsoft.Bcl.AsyncInterfaces/8.0.0": {
-      "sha512": "3WA9q9yVqJp222P3x1wYIGDAkpjAku0TMUaaQV22g6L67AI0LdOIrVS7Ht2vJfLHGSPVuqN94vIr15qn+HEkHw==",
-      "type": "package",
-      "path": "microsoft.bcl.asyncinterfaces/8.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "PACKAGE.md",
-        "THIRD-PARTY-NOTICES.TXT",
-        "buildTransitive/net461/Microsoft.Bcl.AsyncInterfaces.targets",
-        "buildTransitive/net462/_._",
-        "lib/net462/Microsoft.Bcl.AsyncInterfaces.dll",
-        "lib/net462/Microsoft.Bcl.AsyncInterfaces.xml",
-        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
-        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.xml",
-        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
-        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.xml",
-        "microsoft.bcl.asyncinterfaces.8.0.0.nupkg.sha512",
-        "microsoft.bcl.asyncinterfaces.nuspec",
-        "useSharedDesignerContext.txt"
       ]
     },
     "Microsoft.Bcl.Cryptography/10.0.2": {
@@ -3116,10 +3368,10 @@
         "microsoft.codeanalysis.workspaces.msbuild.nuspec"
       ]
     },
-    "Microsoft.Data.SqlClient/6.1.6": {
-      "sha512": "6abRPXrjjEWxcNkTomBIzBdGolYnwD0ykP+6YAynaEEfKlGe94ZSQd58pggucusp28xUA7wLo9XcvzU92ZuF6Q==",
+    "Microsoft.Data.SqlClient/7.0.1": {
+      "sha512": "9jZFXAJ2ThNYK7lhj2RhH7klXVNaWSvZpQncq3bPIOjmHBrdjwgeO4c8wucUVxQwFT8rAA13Z2F2jzoYR7ICDw==",
       "type": "package",
-      "path": "microsoft.data.sqlclient/6.1.6",
+      "path": "microsoft.data.sqlclient/7.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3172,7 +3424,7 @@
         "lib/net9.0/zh-Hant/Microsoft.Data.SqlClient.resources.dll",
         "lib/netstandard2.0/Microsoft.Data.SqlClient.dll",
         "lib/netstandard2.0/Microsoft.Data.SqlClient.xml",
-        "microsoft.data.sqlclient.6.1.6.nupkg.sha512",
+        "microsoft.data.sqlclient.7.0.1.nupkg.sha512",
         "microsoft.data.sqlclient.nuspec",
         "ref/net462/Microsoft.Data.SqlClient.dll",
         "ref/net462/Microsoft.Data.SqlClient.xml",
@@ -3187,6 +3439,36 @@
         "runtimes/win/lib/net462/Microsoft.Data.SqlClient.dll",
         "runtimes/win/lib/net8.0/Microsoft.Data.SqlClient.dll",
         "runtimes/win/lib/net9.0/Microsoft.Data.SqlClient.dll"
+      ]
+    },
+    "Microsoft.Data.SqlClient.Extensions.Abstractions/1.0.0": {
+      "sha512": "rlnxc0KfwDSbE8ZHntFnl8SCgOa9QtJZblMv2zXLhRwl1Je7fsdsVzxSjzzC4JMsfAK+jXJWyezRB8SxUY4BdA==",
+      "type": "package",
+      "path": "microsoft.data.sqlclient.extensions.abstractions/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "dotnet.png",
+        "lib/netstandard2.0/Microsoft.Data.SqlClient.Extensions.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Data.SqlClient.Extensions.Abstractions.xml",
+        "microsoft.data.sqlclient.extensions.abstractions.1.0.0.nupkg.sha512",
+        "microsoft.data.sqlclient.extensions.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Data.SqlClient.Internal.Logging/1.0.0": {
+      "sha512": "Kue/7CF8KNT9zozfr30C94dMZVZml3atqWZvQemSXvTau76tRdypzeKiBKXadqgbOME0UiQIyVTNo5WxCRNVNg==",
+      "type": "package",
+      "path": "microsoft.data.sqlclient.internal.logging/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "dotnet.png",
+        "lib/netstandard2.0/Microsoft.Data.SqlClient.Internal.Logging.dll",
+        "lib/netstandard2.0/Microsoft.Data.SqlClient.Internal.Logging.xml",
+        "microsoft.data.sqlclient.internal.logging.1.0.0.nupkg.sha512",
+        "microsoft.data.sqlclient.internal.logging.nuspec"
       ]
     },
     "Microsoft.Data.SqlClient.SNI.runtime/6.0.2": {
@@ -3603,86 +3885,6 @@
         "microsoft.extensions.dependencymodel.10.0.12.nupkg.sha512",
         "microsoft.extensions.dependencymodel.nuspec",
         "useSharedDesignerContext.txt"
-      ]
-    },
-    "Microsoft.Identity.Client/4.84.2": {
-      "sha512": "Va9FjmABSgj/lcUfHH0pBNQkmS7SNyepz2ERV7Yynp6QgEYpFdSqR6Vzy1WWipN8GS5pBHuXoZbqaDWuARCrHQ==",
-      "type": "package",
-      "path": "microsoft.identity.client/4.84.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "lib/net462/Microsoft.Identity.Client.dll",
-        "lib/net462/Microsoft.Identity.Client.xml",
-        "lib/net472/Microsoft.Identity.Client.dll",
-        "lib/net472/Microsoft.Identity.Client.xml",
-        "lib/net8.0-android34.0/Microsoft.Identity.Client.aar",
-        "lib/net8.0-android34.0/Microsoft.Identity.Client.dll",
-        "lib/net8.0-android34.0/Microsoft.Identity.Client.xml",
-        "lib/net8.0-ios18.0/Microsoft.Identity.Client.dll",
-        "lib/net8.0-ios18.0/Microsoft.Identity.Client.xml",
-        "lib/net8.0/Microsoft.Identity.Client.dll",
-        "lib/net8.0/Microsoft.Identity.Client.xml",
-        "lib/netstandard2.0/Microsoft.Identity.Client.dll",
-        "lib/netstandard2.0/Microsoft.Identity.Client.xml",
-        "microsoft.identity.client.4.84.2.nupkg.sha512",
-        "microsoft.identity.client.nuspec"
-      ]
-    },
-    "Microsoft.Identity.Client.Broker/4.84.2": {
-      "sha512": "928ySLeGz1xtvydwq6h9tv7TbxrtA4ZzavLKUqRJh0PW6BGcEJwpI8W8vf2PlQdYemGm/oyGjdzYzdY/I8r/4A==",
-      "type": "package",
-      "path": "microsoft.identity.client.broker/4.84.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net462/Microsoft.Identity.Client.Broker.dll",
-        "lib/net462/Microsoft.Identity.Client.Broker.xml",
-        "lib/netstandard2.0/Microsoft.Identity.Client.Broker.dll",
-        "lib/netstandard2.0/Microsoft.Identity.Client.Broker.xml",
-        "microsoft.identity.client.broker.4.84.2.nupkg.sha512",
-        "microsoft.identity.client.broker.nuspec"
-      ]
-    },
-    "Microsoft.Identity.Client.Extensions.Msal/4.78.0": {
-      "sha512": "DYU9o+DrDQuyZxeq91GBA9eNqBvA3ZMkLzQpF7L9dTk6FcIBM1y1IHXWqiKXTvptPF7CZE59upbyUoa+FJ5eiA==",
-      "type": "package",
-      "path": "microsoft.identity.client.extensions.msal/4.78.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "lib/net8.0/Microsoft.Identity.Client.Extensions.Msal.dll",
-        "lib/net8.0/Microsoft.Identity.Client.Extensions.Msal.xml",
-        "lib/netstandard2.0/Microsoft.Identity.Client.Extensions.Msal.dll",
-        "lib/netstandard2.0/Microsoft.Identity.Client.Extensions.Msal.xml",
-        "microsoft.identity.client.extensions.msal.4.78.0.nupkg.sha512",
-        "microsoft.identity.client.extensions.msal.nuspec"
-      ]
-    },
-    "Microsoft.Identity.Client.NativeInterop/0.20.6": {
-      "sha512": "noyfdMfVxyWpM6xUDmlW6gUvZ5ci24z7Qoy15JvynTQfZV5vTD2NEdsnT5Gy4ngViwgdIp5iRjRy10jAKXFAgw==",
-      "type": "package",
-      "path": "microsoft.identity.client.nativeinterop/0.20.6",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE",
-        "build/net462/Microsoft.Identity.Client.NativeInterop.props",
-        "buildtransitive/net462/Microsoft.Identity.Client.NativeInterop.targets",
-        "buildtransitive/netstandard2.0/Microsoft.Identity.Client.NativeInterop.targets",
-        "lib/net462/Microsoft.Identity.Client.NativeInterop.dll",
-        "lib/net9.0/Microsoft.Identity.Client.NativeInterop.dll",
-        "lib/netstandard2.0/Microsoft.Identity.Client.NativeInterop.dll",
-        "microsoft.identity.client.nativeinterop.0.20.6.nupkg.sha512",
-        "microsoft.identity.client.nativeinterop.nuspec",
-        "runtimes/linux-x64/native/libmsalruntime.so",
-        "runtimes/osx-arm64/native/msalruntime_arm64.dylib",
-        "runtimes/osx-x64/native/msalruntime.dylib",
-        "runtimes/win-arm64/native/msalruntime_arm64.dll",
-        "runtimes/win-x64/native/msalruntime.dll",
-        "runtimes/win-x86/native/msalruntime_x86.dll"
       ]
     },
     "Microsoft.IdentityModel.Abstractions/8.23.0": {
@@ -4160,27 +4362,6 @@
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
     },
-    "System.ClientModel/1.8.0": {
-      "sha512": "AqRzhn0v29GGGLj/Z6gKq4lGNtvPHT4nHdG5PDJh9IfVjv/nYUVmX11hwwws1vDFeIAzrvmn0dPu8IjLtu6fAw==",
-      "type": "package",
-      "path": "system.clientmodel/1.8.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "CHANGELOG.md",
-        "DotNetPackageIcon.png",
-        "README.md",
-        "analyzers/dotnet/cs/System.ClientModel.SourceGeneration.dll",
-        "lib/net8.0/System.ClientModel.dll",
-        "lib/net8.0/System.ClientModel.xml",
-        "lib/net9.0/System.ClientModel.dll",
-        "lib/net9.0/System.ClientModel.xml",
-        "lib/netstandard2.0/System.ClientModel.dll",
-        "lib/netstandard2.0/System.ClientModel.xml",
-        "system.clientmodel.1.8.0.nupkg.sha512",
-        "system.clientmodel.nuspec"
-      ]
-    },
     "System.CodeDom/6.0.0": {
       "sha512": "CPc6tWO1LAer3IzfZufDBRL+UZQcj5uS207NHALQzP84Vp/z6wF0Aa0YZImOQY8iStY0A2zI/e3ihKNPfUm8XA==",
       "type": "package",
@@ -4367,10 +4548,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Configuration.ConfigurationManager/9.0.11": {
-      "sha512": "vPinosRgEk1CGjohbv0pDuz6gPprkWo5xvBTjOJjks5JOgOEWvPndq5NngGxiTcBcy1+k9GwzZ1c3Bp2fU5ezw==",
+    "System.Configuration.ConfigurationManager/9.0.13": {
+      "sha512": "GbBrJq9S/gYpHzm7Pxx6Y5tDyfSfyxW6tlP5oiKJV38uf19Wp+GIIAnWfyL1zmNiz1+EjwVapw2WkBFvvqKQzg==",
       "type": "package",
-      "path": "system.configuration.configurationmanager/9.0.11",
+      "path": "system.configuration.configurationmanager/9.0.13",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4390,7 +4571,7 @@
         "lib/net9.0/System.Configuration.ConfigurationManager.xml",
         "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll",
         "lib/netstandard2.0/System.Configuration.ConfigurationManager.xml",
-        "system.configuration.configurationmanager.9.0.11.nupkg.sha512",
+        "system.configuration.configurationmanager.9.0.13.nupkg.sha512",
         "system.configuration.configurationmanager.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -4450,40 +4631,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Memory.Data/8.0.1": {
-      "sha512": "BVYuec3jV23EMRDeR7Dr1/qhx7369dZzJ9IWy2xylvb4YfXsrUxspWc4UWYid/tj4zZK58uGZqn2WQiaDMhmAg==",
+    "System.Security.Cryptography.Pkcs/9.0.13": {
+      "sha512": "dxJhkuoaelvWy588wPXjShNks+ZMiSgXnN75/u+DPbER5PqKrLPDftE0BvGM7nDK/scQAVlD+gRXlCAAjWi58Q==",
       "type": "package",
-      "path": "system.memory.data/8.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "PACKAGE.md",
-        "THIRD-PARTY-NOTICES.TXT",
-        "buildTransitive/net461/System.Memory.Data.targets",
-        "buildTransitive/net462/_._",
-        "buildTransitive/net6.0/_._",
-        "buildTransitive/netcoreapp2.0/System.Memory.Data.targets",
-        "lib/net462/System.Memory.Data.dll",
-        "lib/net462/System.Memory.Data.xml",
-        "lib/net6.0/System.Memory.Data.dll",
-        "lib/net6.0/System.Memory.Data.xml",
-        "lib/net7.0/System.Memory.Data.dll",
-        "lib/net7.0/System.Memory.Data.xml",
-        "lib/net8.0/System.Memory.Data.dll",
-        "lib/net8.0/System.Memory.Data.xml",
-        "lib/netstandard2.0/System.Memory.Data.dll",
-        "lib/netstandard2.0/System.Memory.Data.xml",
-        "system.memory.data.8.0.1.nupkg.sha512",
-        "system.memory.data.nuspec",
-        "useSharedDesignerContext.txt"
-      ]
-    },
-    "System.Security.Cryptography.Pkcs/9.0.11": {
-      "sha512": "YS2YqtN6fFjlTDIQI+ucjbbrEvwMn796r+VLTQRr/5Oy6g+i+m7nIou83KnJCnAcKna2I+5eVJRks6SoHSpetQ==",
-      "type": "package",
-      "path": "system.security.cryptography.pkcs/9.0.11",
+      "path": "system.security.cryptography.pkcs/9.0.13",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4508,15 +4659,15 @@
         "runtimes/win/lib/net8.0/System.Security.Cryptography.Pkcs.xml",
         "runtimes/win/lib/net9.0/System.Security.Cryptography.Pkcs.dll",
         "runtimes/win/lib/net9.0/System.Security.Cryptography.Pkcs.xml",
-        "system.security.cryptography.pkcs.9.0.11.nupkg.sha512",
+        "system.security.cryptography.pkcs.9.0.13.nupkg.sha512",
         "system.security.cryptography.pkcs.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Security.Cryptography.ProtectedData/9.0.11": {
-      "sha512": "s8yUYuYYu+PAwvBdhLG1KyrGrk9gkYeuPxfAsXsTqqWyepwSyEw8hAaflW4nO98NG52YpYI1am2+9o+79h2RtQ==",
+    "System.Security.Cryptography.ProtectedData/9.0.13": {
+      "sha512": "t8S9IDpjJKsLpLkeBdW8cWtcPyYqrGu93Dej1RO6WwuL/lkFSqWlan3rMJfortqz1mRIh+sys2AFsSA6jWJ3Jg==",
       "type": "package",
-      "path": "system.security.cryptography.protecteddata/9.0.11",
+      "path": "system.security.cryptography.protecteddata/9.0.13",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4542,7 +4693,7 @@
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "system.security.cryptography.protecteddata.9.0.11.nupkg.sha512",
+        "system.security.cryptography.protecteddata.9.0.13.nupkg.sha512",
         "system.security.cryptography.protecteddata.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -4551,6 +4702,11 @@
       "type": "project",
       "path": "../../../Common/Auth/Auth.csproj",
       "msbuildProject": "../../../Common/Auth/Auth.csproj"
+    },
+    "EventBus/1.0.0": {
+      "type": "project",
+      "path": "../../IBus/EventBus/EventBus.csproj",
+      "msbuildProject": "../../IBus/EventBus/EventBus.csproj"
     },
     "IDP.Application/1.0.0": {
       "type": "project",
@@ -4566,6 +4722,11 @@
       "type": "project",
       "path": "../IDP.Infra/IDP.Infra.csproj",
       "msbuildProject": "../IDP.Infra/IDP.Infra.csproj"
+    },
+    "VerticalNotification/1.0.0": {
+      "type": "project",
+      "path": "../../NotificationService/WebApplication1/VerticalNotification.csproj",
+      "msbuildProject": "../../NotificationService/WebApplication1/VerticalNotification.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4574,18 +4735,25 @@
       "Asp.Versioning.Mvc >= 10.2.1",
       "Asp.Versioning.Mvc.ApiExplorer >= 10.2.1",
       "Auth >= 1.0.0",
+      "DotNetCore.CAP >= 10.0.2",
+      "DotNetCore.CAP.Dashboard >= 10.0.2",
+      "DotNetCore.CAP.RabbitMQ >= 10.0.2",
+      "DotNetCore.CAP.SqlServer >= 10.0.2",
       "IDP.Application >= 1.0.0",
       "IDP.Domain >= 1.0.0",
       "IDP.Infra >= 1.0.0",
       "MassTransit >= 9.2.3",
+      "MassTransit.EntityFrameworkCore >= 9.2.3",
       "MassTransit.RabbitMQ >= 9.2.3",
+      "MassTransit.SqlTransport.SqlServer >= 9.2.3",
       "MediatR >= 14.2.0",
       "MediatR.Extensions.Autofac.DependencyInjection >= 14.1.0",
       "MediatR.Extensions.Microsoft.DependencyInjectionFixed >= 5.1.2",
       "Microsoft.AspNetCore.OpenApi >= 10.0.12",
       "Microsoft.EntityFrameworkCore.Design >= 10.0.12",
       "Microsoft.Extensions.Caching.StackExchangeRedis >= 10.0.12",
-      "Swashbuckle.AspNetCore >= 10.2.3"
+      "Swashbuckle.AspNetCore >= 10.2.3",
+      "VerticalNotification >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4632,6 +4800,9 @@
             },
             "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IDPService\\IDP.Infra\\IDP.Infra.csproj": {
               "projectPath": "E:\\project\\EshopProject\\Eshop\\Src\\Services\\IDPService\\IDP.Infra\\IDP.Infra.csproj"
+            },
+            "E:\\project\\EshopProject\\Eshop\\Src\\Services\\NotificationService\\WebApplication1\\VerticalNotification.csproj": {
+              "projectPath": "E:\\project\\EshopProject\\Eshop\\Src\\Services\\NotificationService\\WebApplication1\\VerticalNotification.csproj"
             }
           }
         }
@@ -4668,11 +4839,35 @@
             "target": "Package",
             "version": "[10.2.1, )"
           },
+          "DotNetCore.CAP": {
+            "target": "Package",
+            "version": "[10.0.2, )"
+          },
+          "DotNetCore.CAP.Dashboard": {
+            "target": "Package",
+            "version": "[10.0.2, )"
+          },
+          "DotNetCore.CAP.RabbitMQ": {
+            "target": "Package",
+            "version": "[10.0.2, )"
+          },
+          "DotNetCore.CAP.SqlServer": {
+            "target": "Package",
+            "version": "[10.0.2, )"
+          },
           "MassTransit": {
             "target": "Package",
             "version": "[9.2.3, )"
           },
+          "MassTransit.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[9.2.3, )"
+          },
           "MassTransit.RabbitMQ": {
+            "target": "Package",
+            "version": "[9.2.3, )"
+          },
+          "MassTransit.SqlTransport.SqlServer": {
             "target": "Package",
             "version": "[9.2.3, )"
           },

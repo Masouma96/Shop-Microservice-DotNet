@@ -24,10 +24,10 @@ namespace IDP.Infra.Data
         }
 
         public DbSet<User> Tbl_Users { get; set; }
-       // public DbSet<Outbox> Tbl_Outbox { get; set; }
-        //protected override void OnModelCreating(ModelBuilder modelBuilder)
-        //{
-        //    base.OnModelCreating(modelBuilder);
-        //}
+        //public DbSet<Outbox> Tbl_Outbox { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }

@@ -10,7 +10,10 @@
         "dependencies": {
           "Auth": "1.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
+          "DotNetCore.CAP": "10.0.2",
+          "EventBus": "1.0.0",
           "IDP.Domain": "1.0.0",
+          "MassTransit": "9.2.3",
           "MediatR": "14.1.0",
           "MediatR.Extensions.Microsoft.DependencyInjectionFixed": "5.1.2"
         },
@@ -34,6 +37,33 @@
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {
             "assemblyVersion": "12.0.0.0",
             "fileVersion": "12.0.1.0"
+          }
+        }
+      },
+      "DotNetCore.CAP/10.0.2": {
+        "runtime": {
+          "lib/net10.0/DotNetCore.CAP.dll": {
+            "assemblyVersion": "10.0.2.0",
+            "fileVersion": "10.0.2.0"
+          }
+        }
+      },
+      "MassTransit/9.2.3": {
+        "dependencies": {
+          "MassTransit.Abstractions": "9.2.3"
+        },
+        "runtime": {
+          "lib/net10.0/MassTransit.dll": {
+            "assemblyVersion": "9.2.3.0",
+            "fileVersion": "9.2.3.0"
+          }
+        }
+      },
+      "MassTransit.Abstractions/9.2.3": {
+        "runtime": {
+          "lib/net10.0/MassTransit.Abstractions.dll": {
+            "assemblyVersion": "9.2.3.0",
+            "fileVersion": "9.2.3.0"
           }
         }
       },
@@ -210,6 +240,14 @@
           }
         }
       },
+      "EventBus/1.0.0": {
+        "runtime": {
+          "EventBus.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "IDP.Domain/1.0.0": {
         "dependencies": {
           "MediatR": "14.1.0",
@@ -243,6 +281,27 @@
       "sha512": "sha512-+g/K+Vpe3gGMKGzjslMOdqNlkikScDjWfVvmWTayrDHaG/n2pPmFBMa+jKX1r/h6BDGFdkyRjAuhFE3ykW+r1g==",
       "path": "automapper.extensions.microsoft.dependencyinjection/12.0.1",
       "hashPath": "automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512"
+    },
+    "DotNetCore.CAP/10.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AY1PbSDa0IR4c2YdoRd3tCh5TfvdjziX1anKm0igUmhvqbVBJLX5bVhSEbbITcEV5dHiM8+rWc7Ss96DHFzuIg==",
+      "path": "dotnetcore.cap/10.0.2",
+      "hashPath": "dotnetcore.cap.10.0.2.nupkg.sha512"
+    },
+    "MassTransit/9.2.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-exbI8yF4w8swAOj5cHiZVyWWWb/O/d0x1hBrD8nvFcAk4iMjEyvg1i+8zvgOsfYkSZp4horycBJVLAQPv1gFbw==",
+      "path": "masstransit/9.2.3",
+      "hashPath": "masstransit.9.2.3.nupkg.sha512"
+    },
+    "MassTransit.Abstractions/9.2.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-D0y98XbWq4Su8YCn1Y3WvQKy3Mn6SS5DGp1vkICy0TpPPzGQI6EPTMmITiim0KCf/WXgh/mRIP9UswIZVDuRjw==",
+      "path": "masstransit.abstractions/9.2.3",
+      "hashPath": "masstransit.abstractions.9.2.3.nupkg.sha512"
     },
     "MediatR/14.1.0": {
       "type": "package",
@@ -350,6 +409,11 @@
       "hashPath": "system.identitymodel.tokens.jwt.8.23.0.nupkg.sha512"
     },
     "Auth/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EventBus/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

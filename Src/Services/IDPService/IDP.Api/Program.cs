@@ -14,16 +14,18 @@ using MassTransit;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
+using VerticalNotification.Features.SMS;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ۱. تنظیمات متمرکز و واحد داکر ردیس روی پورت ویندوز (۶۳۸۰)
+
 builder.Services.AddStackExchangeRedisCache(options =>
 {
     options.Configuration = builder.Configuration.GetValue<string>("CacheSetting:RedisUrl") ?? "127.0.0.1:6380";
 });
+builder.Services.AddHttpClient();
 
-// ۲. تنظیم اتوماتیک AutoMapper برای اسکن لایه Application
+
 builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
 
 builder.Services.AddControllers();
@@ -31,7 +33,7 @@ builder.Services.AddOpenApi();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// ۳. تزریق وابستگی‌های دیتابیس و ریپازیتوری‌ها (تایید لایه‌ها)
+
 builder.Services.AddScoped<IOtpRedisRepository, OtpRedisRepository>();
 builder.Services.AddScoped<IUserCommandRepository, UserCommandRepository>();
 builder.Services.AddScoped<IUserQueryRepository, UserQueryRepository>();
@@ -40,10 +42,12 @@ builder.Services.AddScoped(typeof(ICommandRepository<>), typeof(CommandRepositor
 builder.Services.AddTransient<ShopCommandDbContext>();
 builder.Services.AddTransient<ShopQueryDbContext>();
 
-// ۴. تنظیمات مدیاتور
+
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(UserHandler).Assembly));
 
-// ۵. تنظیمات نسخه‌بندی API (Versioning)
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(VerticalNotification.Features.SMS.SmsIr.Handler).Assembly));
+
+
 builder.Services.AddApiVersioning(options =>
 {
     options.DefaultApiVersion = new ApiVersion(1);
@@ -59,23 +63,42 @@ builder.Services.AddApiVersioning(options =>
     options.GroupNameFormat = "'v'V";
     options.SubstituteApiVersionInUrl = true;
 });
+
+//builder.Services.AddCap(options =>
+//{
+//    options.UseEntityFramework<ShopCommandDbContext>();
+//    options.UseDashboard(path => path.PathMatch = "/cap");
+//    options.UseRabbitMQ(options =>
+//    {
+//        options.ConnectionFactoryOptions = options =>
+//        {
+//            options.Ssl.Enabled = false;
+//            options.HostName = "localhost";
+//            options.UserName = "guest";
+//            options.Password = "guest";
+//            options.Port = 5672;
+//        };
+
+//    });
+//    options.FailedRetryCount = 5;
+//    options.FailedRetryInterval = 60;
+
+//});
+//builder.Services.AddSingleton<CustomerAddedEventSubscriber>();
+
 builder.Services.AddMassTransit(busConfig =>
 {
 
 
+    //busConfig.AddConsumer<GetEvent>();
     busConfig.SetKebabCaseEndpointNameFormatter();
     busConfig.UsingRabbitMq((context, cfg) =>
     {
-        cfg.Host(new Uri(builder.Configuration.GetValue<string>("Rabbit:Host")), h =>
+        cfg.Host("localhost", 5672, "/", h =>
         {
-            
-            h.Username(builder.Configuration.GetValue<string>("Rabbit:UserName"));
-
-            h.Password(builder.Configuration.GetValue<string>("Rabbit:Password"));
-
+            h.Username("guest");
+            h.Password("guest");
         });
-
-        cfg.UseMessageRetry(r => r.Exponential(10, TimeSpan.FromSeconds(5), TimeSpan.FromSeconds(60), TimeSpan.FromSeconds(5)));
 
         cfg.ConfigureEndpoints(context);
     });
@@ -83,7 +106,6 @@ builder.Services.AddMassTransit(busConfig =>
 
 
 
-// ۶. فعال‌سازی ماژول احراز هویت توکن مشترک (کارت هوشمند دیجیتال)
 Auth.Extensions.AddJwt(builder.Services, builder.Configuration);
 
 var app = builder.Build();
